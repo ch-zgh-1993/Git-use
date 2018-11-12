@@ -1,3 +1,11 @@
+/*
+* @Author: Zhang Guohua
+* @Date:   2018-11-12 19:57:51
+* @Last Modified by:   zgh
+* @Last Modified time: 2018-11-12 20:08:39
+* @Description: create by zgh
+* @GitHub: Savour Humor
+*/
 # git操作
 
 ## 安装
@@ -94,13 +102,15 @@
     git watchanged 文件名   // 查看文件提交的详情，人，时间，记录
     ```
     
-## 分支操作
+## Branch 分支操作
     ```
     git branch // 查看分支 当前分支前面会有*标识
     git branch dev // 创建分支
     git checkout dev // 切换分支
     git branch -d dev // 删除分支
     git merge dev // 合并分支到当前分支
+
+    git branch --set-upstream-to=origin/<remote_branch> <local_branch> // 设置追踪分支
     ```
 
 
