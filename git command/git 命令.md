@@ -13,6 +13,10 @@
     sudo apt-get install git-core
     ```
 ## 全局配置
+1. 获取配置
+    ```
+        git config --list
+    ```
 1. 配置用户名邮箱
     ```
         git config --global user.name 
