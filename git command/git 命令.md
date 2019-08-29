@@ -82,6 +82,9 @@
 
 2. pull
     ```
+    git pull origin <远程分支名>:<本地分支名> // 将远程指定分支 拉取到 本地指定分支上：
+    git pull origin <远程分支名> // 将远程指定分支 拉取到 本地当前分支上：
+    git pull origin // 将与本地当前分支同名的远程分支 拉取到 本地当前分支上(需先关联远程分支)
     git pull 本地仓库名 远程分支 // orgin master
     ```
     在push之前进行pull操作的意义在于，当你们两个人的代码改动冲突较大时，必须选择保留其他人代码。git的push不带merge操作。
@@ -90,7 +93,7 @@
     ```
     git commit -m 'test commit' // 提交 注释说明
     ```
-
+ 
 4. clone
     ```
     git clone url 目标文件夹 // 克隆别人和自己的项目 
@@ -108,8 +111,14 @@
 
 7. push
     ```
+    git push origin <本地分支名>:<远程分支名>
+    git push origin <本地分支名> // 将本地分支名修改到远程同名分支上。
+    git push origin // 将本地分支名修改到远程同名分支上，需要先进行分支关联。
     git push origin master  // 将本地分支代码推送到远程主机的master分支
     git push -u origin master // 在初次提交使用 -u 会将本地分支与远程master分支关联起来，简化后续操作。
+    git push --set-upstream origin <本地分支名> // 将本地分支与远程同名分支相关联
+
+
     ```
 8.  merge
     ```
@@ -151,6 +160,8 @@
     
     git branch --set-upstream-to=origin/<remote_branch_name> <local_branch_name> // 设置追踪分支，设置后，可以使用简化操作。
     git branch -u origin/<remote_branch_name> <local_branch_name> // 同上
+    
+    git branch -m oldbranch newbranch //  重命名本地分支
     
     <!--对比分支-->
     git diff b1 b2 --stat // 比较两个分支的文件差异
