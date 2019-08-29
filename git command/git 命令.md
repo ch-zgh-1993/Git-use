@@ -123,6 +123,11 @@
 8.  merge
     ```
      git merge origin/master // 将远程的master分支merge 到本地，若无冲突，则merge顺利。
+     
+     // 合并分支到远程：
+     git checkout B
+     git merge A
+     git push origin B
     ```
 9. checkout
 使用版本库中的文件替换本地工作区的文件，一件还原至版本库中的代码。
