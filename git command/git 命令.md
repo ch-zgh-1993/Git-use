@@ -175,7 +175,17 @@
     git diff b1 b2 --stat // 比较两个分支的文件差异
     
     ```
-    
+## 标签 Tag
+打标签功能。Git 使用的标签有两种类型：轻量级的（lightweight）和含附注的（annotated）。一般我们都建议使用含附注型的标签，以便保留相关信息；当然，如果只是临时性加注标签，或者不需要旁注额外信息，用轻量级标签也没问题。
+```
+git tag  // 列出已有标签
+git tag 'v1.3.*' // 会列出所有符合 1.3. 前缀的标签。
+git tag -a [tagName] -m [备注信息] // 新建一个附注标签
+git show [tagName] // 显示标签的版本信息
+git tag [tagName] // 创建一个轻量级标签
+git push origin [tagName] // 推送标签分支到远程。
+```
+
 ## 提交历史日志操作
 ```
 git log filename // 查看远程仓库提交历史 -p 显示每次提交修改的情况 -2 显示最近两次提交的历史 Q退出日志
