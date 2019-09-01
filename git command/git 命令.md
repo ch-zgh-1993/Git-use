@@ -124,7 +124,7 @@
     ```
      git merge origin/master // 将远程的master分支merge 到本地，若无冲突，则merge顺利。
      
-     // 合并分支到远程：
+     // 合并分支到远程： 将 A 分支合并到 B 分支，并将 B 分支提交。
      git checkout B
      git merge A
      git push origin B
@@ -133,7 +133,8 @@
 使用版本库中的文件替换本地工作区的文件，一件还原至版本库中的代码。
     ```
     git checkout - a.text 
-    
+    git checkout [本地分支名] // 切换本地分支
+    git checkout -b [本地分支名] origin/[远程分支名] // 将远程分支拉到本地
     git checkout -b t // 创建分支t，再切换到分支t
     ```
 ## 版本操作
