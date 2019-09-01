@@ -184,6 +184,8 @@ git tag -a [tagName] -m [备注信息] // 新建一个附注标签
 git show [tagName] // 显示标签的版本信息
 git tag [tagName] // 创建一个轻量级标签
 git push origin [tagName] // 推送标签分支到远程。
+git tag -d [tagName] // 删除指定的标签
+git tag [tagName] [分支名?] // 增加分支名
 ```
 
 ## 提交历史日志操作
