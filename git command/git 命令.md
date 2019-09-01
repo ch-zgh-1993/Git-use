@@ -150,6 +150,7 @@
     git branch // 查看分支 当前分支前面会有*标识
     git branch -v // 查看分支最后一次提交
     git branch dev // 创建分支
+    git branch -a // 查看远程所有分支列表
     
     git checkout dev // 切换分支
     git checkout -b <local_branch_name> remote/<remote_branch_name>
