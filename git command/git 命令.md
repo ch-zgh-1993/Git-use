@@ -182,7 +182,7 @@ git log filename // 查看远程仓库提交历史 -p 显示每次提交修改�
 
 git show 提交id filename // 查看某次提交时文件变化
 
-git reflog // 记录命令历史
+git reflog // 记录命令历史,可以结合 git reset 退回到执行某个命令的版本。
 
 ```
 
