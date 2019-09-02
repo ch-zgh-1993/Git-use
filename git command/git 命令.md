@@ -92,6 +92,7 @@
 3. commit
     ```
     git commit -m 'test commit' // 提交 注释说明
+    git commit --amend // 修改注释
     ```
  
 4. clone
@@ -124,6 +125,8 @@
     ```
      git merge origin/master // 将远程的master分支merge 到本地，若无冲突，则merge顺利。
      
+     git merge B // 将 b 分支合并到当前分支。
+     
      // 合并分支到远程： 将 A 分支合并到 B 分支，并将 B 分支提交。
      git checkout B
      git merge A
@@ -139,8 +142,10 @@
     ```
 ## 版本操作
     ```
-    git reset --hard HEAD^ // 返回上一个版本 HEAD表示当前版本，上个版本是HEAD^,上上一个版本是HEAD^^ 第几个版本可以写 HEAD~n
+    git reset --hard HEAD^ // 删除工作空间改动代码，撤销commit，撤销git add . 回退到上一次 commit 的状态。 返回上一个版本 HEAD表示当前版本，上个版本是HEAD^,上上一个版本是HEAD^^ 第几个版本可以写 HEAD~n
     git reset --hard 99 // 返回版本号为99的版本
+    git reset --mixed HEAD^ // 不删除工作空间改动代码，撤销commit，并且撤销git add . 默认参数
+    git reset --soft HEAD^ // 不删除工作空间改动代码，撤销commit，不撤销git add .
     git log --pertty=online 文件名 // 查看当前文件提交的记录
     git watchanged 文件名   // 查看文件提交的详情，人，时间，记录
     
