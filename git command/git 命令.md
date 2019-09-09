@@ -2,7 +2,7 @@
 * @Author: Zhang Guohua
 * @Date:   2018-11-12 19:57:51
 * @Last Modified by:   zgh
-* @Last Modified time: 2018-11-12 20:08:39
+* @Last Modified time: 2019-09-09 17:25:47
 * @Description: create by zgh
 * @GitHub: Savour Humor
 */
@@ -93,6 +93,11 @@
     ```
     git commit -m 'test commit' // 提交 注释说明
     git commit --amend // 修改注释
+
+    <!-- 修改已经 push 的注释 -->
+    git commit --amend // 修改上次提交的注释
+    git pull origin [分支名] // 确认代码是最新的代码即可。如果是最新的，则不需要执行 pull 操作，但要看好分支名称
+    git push --force origin master // 强制 push 代码到远程分支
     ```
  
 4. clone
