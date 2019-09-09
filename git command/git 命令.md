@@ -49,7 +49,7 @@
     git remote rename <old> <new> // 重命名本地名,会修改远程分支名
     
     git remote remove <name> // 移除远程仓库
-    
+    git remote update origin --prune // 同步远程分支的更改到本地列表。
     git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
     git remote set-branches [--add] <name> <branch>…
     git remote get-url [--push] [--all] <name>
