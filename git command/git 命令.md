@@ -146,6 +146,26 @@
     git checkout -b [本地分支名] origin/[远程分支名] // 将远程分支拉到本地
     git checkout -b t // 从当前分支，创建分支t，再切换到分支t
     ```
+    
+10. rebase
+    ```
+    git rebase -i HEAD~3 // 合并多次提交日志为一次, 并重新设置日志信息. 将最后要保留的日志设置为 pick, 其他的前缀修改为 s 。保存。
+    ```
+    
+11. submodules
+    ```
+    git submodule add giturl a/b // 添加子模块
+    git submodule foreach git pull // 更新子模块
+    git clone xxx --recursive // 初次 clone 父项目
+    // 或者如下
+    git clone xxx
+    git submodule init && git submodule update
+    // 删除项目
+    git rm --cached 子模块路径
+    rm -rf 子模块路径
+    rm .gitmodules
+    
+    ```
 ## 版本操作
     ```
     git reset --hard HEAD^ // 删除工作空间改动代码，撤销commit，撤销git add . 回退到上一次 commit 的状态。 返回上一个版本 HEAD表示当前版本，上个版本是HEAD^,上上一个版本是HEAD^^ 第几个版本可以写 HEAD~n
