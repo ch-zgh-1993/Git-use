@@ -165,6 +165,10 @@
     rm -rf 子模块路径
     rm .gitmodules
     
+    // 删除子模块
+    1. rm -rf src/sub
+    2. .gitmodules 移除子模块代码
+    3. git rm --cached src/sub
     ```
 ## 版本操作
     ```
