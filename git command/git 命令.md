@@ -154,7 +154,7 @@
     
 11. submodules
     ```
-    git submodule add giturl a/b // 添加子模块
+    git submodule add giturl a/b // 添加子模块, giturl 子模块地址， a/b 子模块路径.
     git submodule foreach git pull // 更新子模块
     git clone xxx --recursive // 初次 clone 父项目
     // 或者如下
