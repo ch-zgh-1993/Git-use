@@ -45,6 +45,7 @@
     
     git remote add origin https/git地址 // origin为本地仓库名,代表远程主机 连接远程git 项目 url
     git remote add [-t <branch>] [-m <master>] [-f] [--[no-]tags] [--mirror=<fetch|push>] <name> <url> 
+    git remote set-url origin git地址 // 设置远程仓库地址
     
     git remote rename <old> <new> // 重命名本地名,会修改远程分支名
     
