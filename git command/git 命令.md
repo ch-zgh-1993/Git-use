@@ -121,6 +121,10 @@
     git push origin <本地分支名>:<远程分支名>
     git push origin <本地分支名> // 将本地分支名修改到远程同名分支上。
     git push origin // 将本地分支名修改到远程同名分支上，需要先进行分支关联。
+    
+    git branch -d branch // 删除本地分支
+     git branch -D branch // 强制删除本地分支
+    git push origin --delete branch // 删除远程分支
     git push origin master  // 将本地分支代码推送到远程主机的master分支
     git push -u origin master // 在初次提交使用 -u 会将本地分支与远程master分支关联起来，简化后续操作。
     git push --set-upstream origin <本地分支名> // 将本地分支与远程同名分支相关联
