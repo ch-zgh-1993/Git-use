@@ -175,6 +175,14 @@
     2. .gitmodules 移除子模块代码
     3. git rm --cached src/sub
     ```
+    
+12. cherry-pick
+    ```
+    git cherry-pick 【commitId】 合并某一次提交到当前分支
+    git cherry-pick -x 【commitId】 保留原始作者信息
+    git cherry-pick 【a】..【b】 左开右闭， 把不包含 a 的，到 b 之间的提交合并到当前分支
+    git cherry-pick 【a】^..【b】 包含 a 提交的。
+    ```
 ## 版本操作
     ```
     git reset --hard HEAD^ // 删除工作空间改动代码，撤销commit，撤销git add . 回退到上一次 commit 的状态。 返回上一个版本 HEAD表示当前版本，上个版本是HEAD^,上上一个版本是HEAD^^ 第几个版本可以写 HEAD~n
