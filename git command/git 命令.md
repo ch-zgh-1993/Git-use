@@ -192,7 +192,7 @@
     git reset HEAD // 取消 add 的文件，转变为 add 前的状态；
     git log --pertty=online 文件名 // 查看当前文件提交的记录
     git watchanged 文件名   // 查看文件提交的详情，人，时间，记录
-    git reset commit // 保留修改代码，但将提交记录重置，可以用来合并 commit 
+    git reset commitId // 保留修改代码，但将提交记录重置，可以用来合并 commit 
     
     <!--对比版本-->
     git diff commit-id1 commit-id2 --stat // 比较版本差异
