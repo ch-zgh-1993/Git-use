@@ -196,6 +196,8 @@
     
     <!--对比版本-->
     git diff commit-id1 commit-id2 --stat // 比较版本差异
+    
+    
     ```
     
 ## Branch 分支操作
@@ -247,6 +249,10 @@ git show 提交id filename // 查看某次提交时文件变化
 
 git reflog // 记录命令历史,可以结合 git reset 退回到执行某个命令的版本。
 
+git log --pretty=oneline 文件名 查看某个文件的历史修改记录
+
+git show id 查看某次修改的内容
+
 ```
 
 ## Git Add
@@ -265,8 +271,10 @@ git rm // 移除提交文件
 git rm a.md // 当删除一些版本库中的文件，需要提交时，先要将文件rm,再进行提交。
 ```
 
-
- 
+## 其他
+```
+--allow-unrelated-history // 可以合并两个独立启动仓库的历史
+```
     
 
 
