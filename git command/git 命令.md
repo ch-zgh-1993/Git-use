@@ -143,9 +143,10 @@
      git push origin B
     ```
 9. checkout
-使用版本库中的文件替换本地工作区的文件，一件还原至版本库中的代码。
+使用版本库中的文件替换本地工作区的文件，一件还原至版本库中的代码。 
     ```
-    git checkout - a.text 
+    git checkout a.text  取消 a.text 文件修改
+    git checkout .  取消所有文件修改
     git checkout [本地分支名] // 切换本地分支
     git checkout origin/[远程分支名] // 切换到远程分支上。
     git checkout -b [本地分支名] origin/[远程分支名] // 将远程分支拉到本地
