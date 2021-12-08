@@ -270,6 +270,7 @@ git add --all <pathspec> // 将让你删除文件
 git rm -r --cached . // 删除本地缓存，更新文件追踪状态
 git rm // 移除提交文件
 git rm a.md // 当删除一些版本库中的文件，需要提交时，先要将文件rm,再进行提交。
+git rm * -r // 删除文件加下的所有文件， -r 是 recursive 递归。
 ```
 
 ## 其他
