@@ -197,7 +197,10 @@
     
     <!--对比版本-->
     git diff commit-id1 commit-id2 --stat // 比较版本差异
-    
+
+    <!-- reset 错误了， 本地回退之前的代码-->
+    git reflog 查看 commit 
+    git reset --hard COMMITID
     
     ```
     
