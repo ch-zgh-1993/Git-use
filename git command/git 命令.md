@@ -233,7 +233,7 @@
     
     ```
 ## 标签 Tag
-打标签功能。Git 使用的标签有两种类型：轻量级的（lightweight）和含附注的（annotated）。一般我们都建议使用含附注型的标签，以便保留相关信息；当然，如果只是临时性加注标签，或者不需要旁注额外信息，用轻量级标签也没问题。
+打标签功能。Git 使用的标签有两种类型：轻量级的（lightweight）和含附注的（annotated）。一般我们都建议使用含附注型的标签，以便保留相关信息；当然，如果只是临时性加注标签，或者不需要旁注额外信息，用轻量级标签也没问题。一般发布包可以使用标准的 tag, npm version, npm publish beat/alpha。 git tag 不用来开发， 建分支开发完成后再推送到 tag 上。发布包。
 ```
 git tag  // 列出已有标签
 git tag 'v1.3.*' // 会列出所有符合 1.3. 前缀的标签。
@@ -243,6 +243,8 @@ git tag [tagName] // 创建一个轻量级标签
 git push origin [tagName] // 推送标签分支到远程。
 git tag -d [tagName] // 删除指定的标签
 git tag [tagName] [分支名?] // 增加分支名
+
+npm dist-tag add pkg@1.0.0 latest
 ```
 
 ## 提交历史日志操作
